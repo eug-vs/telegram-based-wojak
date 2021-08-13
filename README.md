@@ -16,6 +16,8 @@ Generated stickers are located in `out` directory, you can preview them with `sx
 ```
 $ make view
 ```
+![image](https://user-images.githubusercontent.com/51545008/129426994-2a787714-772d-4010-b295-6ae00346bdbc.png)
+
 
 # TODO
  - Automatically publish new stickers using `CircleCI`
