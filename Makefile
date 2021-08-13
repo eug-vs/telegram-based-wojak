@@ -14,7 +14,12 @@ view: all
 
 out/%.png: src/%.*
 	@mkdir -p out
-	convert $< -fuzz $(FUZZ) -fill none -floodfill +0+0 white -resize $(SIZE)\> $@
+	magick $< \
+		-fuzz $(FUZZ) -fill none \
+		-floodfill +0+0 white \
+		-floodfill "+%[fx:w-1]+0" white \
+		-trim +repage \
+		-resize $(SIZE)\> $@
 
 clean:
 	rm -rf out
