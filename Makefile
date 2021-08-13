@@ -4,10 +4,13 @@ OUTPUTS=$(patsubst src/%.png, out/%.png, $(patsubst src/%.jpg, out/%.png, $(SOUR
 SIZE=512x512
 FUZZ=50%
 
+VIEW_COMMAND=sxiv -t
+
+
 all: $(OUTPUTS)
 
-open: all
-	sxiv -t out
+view: all
+	$(VIEW_COMMAND) out
 
 out/%.png: src/%.*
 	@mkdir -p out
