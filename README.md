@@ -1,6 +1,14 @@
 # telegram-based-wojak
 Source images and convert script for **based wojak** stickerpack.
 
+# Example
+Here's the example source images (*left*) and generated stickers (*right*). Notice how stickers are cropped to avoid wasting space.
+<div>
+ <img src="https://user-images.githubusercontent.com/51545008/129427152-e01bc830-06e4-441a-9d8c-3dccbfb4d025.png" width="45%">
+ ----
+ <img src="https://user-images.githubusercontent.com/51545008/129426994-2a787714-772d-4010-b295-6ae00346bdbc.png" width="45%">
+</div>
+
 # Usage
 ## Prerequisites
  - [make](https://www.gnu.org/software/make/)
@@ -16,8 +24,6 @@ Generated stickers are located in `out` directory, you can preview them with `sx
 ```
 $ make view
 ```
-![image](https://user-images.githubusercontent.com/51545008/129426994-2a787714-772d-4010-b295-6ae00346bdbc.png)
-
 
 # TODO
  - Automatically publish new stickers using `CircleCI`
