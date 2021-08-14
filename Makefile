@@ -12,6 +12,9 @@ all: $(OUTPUTS)
 view: all
 	$(VIEW_COMMAND) out
 
+viewsrc:
+	$(VIEW_COMMAND) src
+
 out/%.png: src/%.*
 	@mkdir -p out
 	magick $< \
@@ -19,7 +22,7 @@ out/%.png: src/%.*
 		-floodfill +0+0 white \
 		-floodfill "+%[fx:w-1]+0" white \
 		-trim +repage \
-		-resize $(SIZE)\> $@
+		-resize $(SIZE) $@
 
 clean:
 	rm -rf out
