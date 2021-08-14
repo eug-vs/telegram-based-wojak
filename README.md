@@ -1,6 +1,8 @@
 # telegram-based-wojak
 Source images and convert script for **based wojak** stickerpack.
 
+Add stickerpack: https://t.me/addstickers/BasedWojak
+
 # Example
 Here's the example source images (*left*) and generated stickers (*right*). Notice how stickers are cropped to avoid wasting space.
 <div>
